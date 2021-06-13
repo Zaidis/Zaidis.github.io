@@ -2,16 +2,145 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
     <title> Adam Weber - Portfolio</title>
 </head>
 
 <body>
+    <section class="section"> <!-- Menu -->
+        <div class="menu">
+            <a href="https://zaidisx.itch.io/" style="padding-right: 50px;" ><img src="Images/itchIcon.png" class="menuIcon"></a>
+            <a href="https://github.com/Zaidis" style="padding-left: 50px;" ><img src="Images/githubLogo.png" class="menuIcon"></a>
+        </div>
+    </section>
     <header> <!--Header-->
-        <p class="headerText">
-            My name is Adam Weber. I am a passionate Game Programmer and Game Designer. I specialize in Front End programming and Level Design. 
-        </p>
-        <img src="Images/ICON.png" alt="icon" id="icon">
+        <div class = "intro">
+            <div class="container">
+                <img src="Images/ICON.png" alt="icon" id="icon">
+                <p class="headerText">
+                    
+                    My name is <b style="color: aquamarine;">Adam Weber</b>. I am a passionate Game Programmer and Game Designer. I specialize in Front End programming and Level Design. 
+                </p>
+            </div>
+        </div>
     </header>
+
+    <section class="section"> <!--About Me Section-->
+        <div>
+            <p class="sepText">
+                About Me
+            </p>
+        </div>
+        <img src = "Images/separater.png" alt="sep" class = "sep">
+        <div>
+            <p class="normText">
+                I am a senior at University of Wisconsin - Whitewater. I am striving for a Bachelor of Science in Computer Science and Media Arts and Game Development - Communication/Gaming. I have made the deans list in every semester so far, and I intend
+                to keep that streak to the end. <br><br>
+
+                Before I went to college, I was a part of <b style="color: aquamarine;">CORE Robotics</b>. In my time there, I was the lead designer of its website and worked closely with sponsors. Many of my changes and designs are still
+                on the website today. You can see the website <a href="http://core2062.com/" style="color: aquamarine;"> here</a>! <br><br>
+
+                In my three years in Whitewater thus far, I have worked hard to learn and gain as much experience as possible in the gaming field. I have been a part of a study abroad project (became remote due to Covid 19), personal and team based projects, and 
+                numerous game jams during the school years and summers. <br><br>
+
+                I push myself to become better everyday. Making games is my passion, and I hope one day that I can be a part of a great team working for the same goal: to create amazing games that will be cherished by many. <br><br>
+
+                <i style="color: white;">If you have any questions or want to work with me, please send me an email!</i><br>
+                <i style="color: white;">zaidisgames@gmail.com</i>
+            </p>
+        </div>
+        
+    </section>
+    <section class="section"> <!--My Skills-->
+        <div>
+            <p class="sepText">
+                My Skills
+            </p>
+        </div>
+        <img src = "Images/separater.png" alt="sep" class = "sep">
+        <div class="container2">
+            <div style="margin-right: 1in;">
+                <p style="font-size: 30px; color: aquamarine;">Languages</p>
+                <p><b style="font-size: 20px;">C#</b></p>
+                <p><b style="font-size: 20px;">C++</b></p>
+                <p>Java</p>
+                <p>HTML/CSS</p>
+                <p>PHP</p>
+            </div>
+            <div style="margin-right: 0.4in;">
+                <p style="font-size: 30px; color: aquamarine;">Tools</p>
+                <p><b style="font-size: 20px;">Visual Studio</b></p>
+                <p>Adobe Suite</p>
+                <p>Microsoft Office</p>
+                
+                <p>Github</p>
+                <p>Jera</p>
+            </div>
+            <div style="margin-left: 1in;">
+                <p style="font-size: 30px; color: aquamarine;">Engine</p>
+                <p><b style="font-size: 20px;">Unity</b></p>
+                <p>Unreal</p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="section"> <!--My-->
+        <div>
+            <p class="sepText">
+                My Work
+            </p>
+        </div>
+        <img src = "Images/separater.png" alt="sep" class = "sep">
+        <div class="project">
+            <img src="Images/anima.png" alt="anima" class="workImages">
+            <div class="workDescription">
+                <p style="color: aquamarine; margin: 0px;">Anima - Study Abroad Project</p>
+                <p>
+                    Anima was created during a cooperation with UW Whitewater and HAN University in the Netherlands. 
+                    Sadly due to the pandemic, this project had to become remote over the spring and summer. Nonetheless, I still was able to work
+                    along side the HAN students from the Netherlands, and we made good use of Jera to organize our project the best we could.<br><br>
+
+                    I was part of one of the two programming teams in Anima. My team focused on the environment mechanics that the player would face. I wrote the code for 
+                    pressure plates, door opening, and I also helped with the character programming and bug fixing. Sadly the website to this project was closed, but I 
+                    still have access to the files!
+                </p>
+                <p>Spring and Summer of 2020</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Images/watcher.png" alt="watcher" class="workImages">
+            <div class="workDescription">
+                <p style="color: aquamarine; margin: 0px;" >The Watcher - Team Project</p>
+                <p>
+                    The Watcher was created at the beginning of the Covid 19 Pandemic. Originally made in 48 hours during a local game jam, 
+                    The Watcher was published on itch.io, and over the course of a few days it became the top game under the "popular" tag for the survival genre with 
+                    thousands of downloads and views with good ratings.<br><br>
+
+                    I was the lead map designer for this project, so my largest job was to create the map and decorate it with foliage and random objects. However, I also
+                    participated in programming. I created the note system and helped with level transition. 
+                </p>
+                <p>
+                    Spring 2020
+                </p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Images/lyra.png" alt="lyra" class="workImages">
+            <div class="workDescription">
+                <p style="color: aquamarine; margin: 0px;">Lyra's Tale - Personal Project</p>
+                <p>
+                    Lyra's Tale is my own personal RPG I created over the course of around ten months. I have always wanted to make my own "Zelda" game where 
+                    the player embarks on a journey through various maps, slaying monsters, and having a great adventure. <br><br>
+
+                    Every single asset in the game is my own, which includes the art, the story, the programming, and even the music. For the programming, I created
+                    my own inventory system, crafting system, input system, combat, dialogue trees, and more. I am very proud of this game even though it is a demo, and I 
+                    intend to keep working on this. 
+                </p>
+                <p>Spring 2020 - Spring 2021</p>
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>

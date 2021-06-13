@@ -1,7 +1,105 @@
+body{
+    background-color: hsl(0, 0%, 15%);
+    max-width: 2527px;
+    min-width: 1427px;
+}
+p{
+    color: hsl(0, 0%, 85%);
+    font-family: 'Ubuntu', sans-serif;
+}
+header{
+    margin-left: 1in;
+    margin-right: 1in;
+    margin-top: 1in;
+    position: static;
+}
 .headerText {
-    font-size: 30px;
+    font-size: 55px;
+    margin-right: 5in;
+    margin-left: 2in;
+    text-align: center;
 }
 #icon {
-    width: 100px;
+    width: 300px;
     height: auto;
+    border-radius: 16px;
+    box-shadow: 1px 10px 5px black;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.intro {
+    display: block;
+    max-width: 2200px;
+    min-width: 2200px;
+    margin: auto;
+}
+.section {
+    margin: 1in;
+    text-align: center;
+    display: block;
+}
+.sep{
+    width: 300px;
+    
+}
+.sepText {
+    font-size: 40px;
+    margin: 0px;
+}
+.normText {
+    font-size: 30px;
+    margin-right: 3in;
+    margin-left: 3in;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    color: hsl(0, 0%, 85%);
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.menuIcon {
+    transition: width 0.3s;
+    width: 75px; 
+    border-radius: 8px;
+    position: absolute;
+}
+.menuIcon:hover {
+    width: 80px;
+}
+
+.workImages {
+    max-width: 700px;
+    min-width: 700px;
+    margin-right: 1in;
+}
+.workDescription{
+    font-size: 25px;
+    margin-right: 5in;
+}
+.project{
+    display: flex;
+    text-align: left;
+    margin-top: 0.3in;
+    max-width: 2335px;
+    min-width: 2335px;
 }
