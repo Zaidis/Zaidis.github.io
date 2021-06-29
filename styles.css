@@ -91,15 +91,31 @@ li {
     max-width: 700px;
     min-width: 700px;
     margin-right: 1in;
+    flex-basis: 100%;
 }
 .workDescription{
     font-size: 25px;
     margin-right: 5in;
+    flex-basis: 100%;
 }
 .project{
     display: flex;
-    text-align: left;
+    text-align: center;
+    flex-wrap: wrap;
     margin-top: 0.3in;
     max-width: 2335px;
     min-width: 2335px;
+}
+
+@media (min-width: 600px){
+    .project{
+        flex-wrap: nowrap;
+        text-align: left;
+    }
+    .workDescription{
+        flex-basis: 50%;
+    }
+    .workImages{
+        flex-basis: 50%;
+    }
 }
