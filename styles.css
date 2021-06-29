@@ -88,8 +88,8 @@ li {
     margin-right: 1in;
     margin-left: 1in;
     flex-basis: 100%;
-    max-width: 700px;
-    min-width: 700px;
+    max-width: 300px;
+    min-width: 300px;
 }
 .workDescription{
     font-size: 25px;
@@ -129,5 +129,7 @@ li {
     .workImages{
         flex-basis: 50%;
         margin-left: 0px;
+        max-width: 700px;
+        min-width: 700px;
     }
 }
