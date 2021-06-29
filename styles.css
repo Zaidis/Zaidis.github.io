@@ -85,7 +85,6 @@ li {
 }
 
 .workImages {
-    width: auto;
     margin-right: 1in;
     margin-left: 1in;
     flex-basis: 100%;
