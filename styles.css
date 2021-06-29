@@ -61,14 +61,14 @@ header{
 
 }
 .skills_topic{
-    font-size: 20px; 
+    font-size: 25px; 
     color: aquamarine;
 }
 .skills_great{
     font-size: 10px;
 }
 .skills_good{
-
+    font-size: 5px;
 }
 ul {
     list-style-type: none;
@@ -124,7 +124,7 @@ li {
         font-size: 20px;
     }
     .skills_good{
-        
+        font-size: 20px;
     }
     .section{
         margin: 1in;
