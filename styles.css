@@ -13,9 +13,8 @@ header{
     position: static;
 }
 .headerText {
-    font-size: 55px;
-    margin-right: 5in;
-    margin-left: 2in;
+    font-size: 25px;
+    
     text-align: center;
 }
 #icon {
@@ -115,6 +114,11 @@ li {
     body {
         max-width: 2527px;
         min-width: 1427px;
+    }
+    .headerText{
+        font-size: 55px;
+        margin-right: 5in;
+        margin-left: 2in;
     }
     .normText{
         font-size: 30px;
