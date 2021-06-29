@@ -59,8 +59,7 @@ header{
 }
 .normText {
     font-size: 30px;
-    margin-right: 3in;
-    margin-left: 3in;
+
 }
 ul {
     list-style-type: none;
@@ -107,6 +106,10 @@ li {
     body {
         max-width: 2527px;
         min-width: 1427px;
+    }
+    .normText{
+        margin-right: 3in;
+        margin-left: 3in;
     }
     .intro{
         max-width: 2200px;
