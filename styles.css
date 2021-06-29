@@ -84,7 +84,7 @@ li {
 }
 
 .workImages {
-    
+    text-align: center;
     flex-basis: 100%;
     max-width: 400px;
     min-width: 400px;
