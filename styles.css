@@ -86,8 +86,7 @@ li {
 }
 
 .workImages {
-    max-width: 700px;
-    min-width: 700px;
+    width: auto;
     margin-right: 1in;
     margin-left: 1in;
     flex-basis: 100%;
@@ -126,5 +125,7 @@ li {
     .workImages{
         flex-basis: 50%;
         margin-left: 0px;
+        max-width: 700px;
+        min-width: 700px;
     }
 }
