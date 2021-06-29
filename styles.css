@@ -103,14 +103,14 @@ li {
     text-align: center;
     flex-wrap: wrap;
     margin-top: 0.3in;
-    max-width: 2335px;
-    min-width: 2335px;
 }
 
 @media (min-width: 600px){
     .project{
         flex-wrap: nowrap;
         text-align: left;
+        max-width: 2335px;
+        min-width: 2335px;
     }
     .workDescription{
         flex-basis: 50%;
