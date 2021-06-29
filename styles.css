@@ -14,20 +14,22 @@ header{
 }
 .headerText {
     font-size: 25px;
-    
+    flex-basis: 100%;
     text-align: center;
 }
 #icon {
-    width: 300px;
+    width: 100px;
     height: auto;
-    border-radius: 16px;
+    border-radius: 4px;
     box-shadow: 1px 10px 5px black;
+    flex-basis: 100%;
 }
 .container {
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: visible;
+    flex-wrap: wrap;
 }
 .container2 {
     display: flex;
@@ -114,6 +116,14 @@ li {
     body {
         max-width: 2527px;
         min-width: 1427px;
+    }
+    #icon {
+        width: 300px;
+        border-radius: 16px;
+        flex-basis: 0%;
+    }
+    .container {
+        flex-wrap: nowrap;
     }
     .headerText{
         font-size: 55px;
