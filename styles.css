@@ -57,7 +57,7 @@ header{
     margin: 0px;
 }
 .normText {
-    font-size: 30px;
+    font-size: 15px;
 
 }
 .skills_topic{
@@ -115,6 +115,9 @@ li {
     body {
         max-width: 2527px;
         min-width: 1427px;
+    }
+    .normText{
+        font-size: 30px;
     }
     .skills_topic{
         font-size: 30px; 
