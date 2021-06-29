@@ -45,7 +45,6 @@ header{
     margin: auto;
 }
 .section {
-    margin: 1in;
     text-align: center;
     display: block;
 }
@@ -106,6 +105,9 @@ li {
     body {
         max-width: 2527px;
         min-width: 1427px;
+    }
+    .section{
+        margin: 1in;
     }
     .normText{
         margin-right: 3in;
