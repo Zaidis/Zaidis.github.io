@@ -1,7 +1,6 @@
 body{
     background-color: hsl(0, 0%, 15%);
-    max-width: 2527px;
-    min-width: 1427px;
+    
 }
 p{
     color: hsl(0, 0%, 85%);
@@ -106,6 +105,10 @@ li {
 }
 
 @media (min-width: 600px){
+    body {
+        max-width: 2527px;
+        min-width: 1427px;
+    }
     .project{
         flex-wrap: nowrap;
         text-align: left;
