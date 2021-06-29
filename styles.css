@@ -93,7 +93,7 @@ li {
 }
 .workDescription{
     font-size: 25px;
-    margin-right: 5in;
+    
     flex-basis: 100%;
 }
 .project{
@@ -120,6 +120,7 @@ li {
     }
     .workDescription{
         flex-basis: 50%;
+        margin-right: 5in;
     }
     .workImages{
         flex-basis: 50%;
