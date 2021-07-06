@@ -166,7 +166,7 @@ li {
     .workDescription{
         flex-basis: 50%;
         font-size: 1vw;
-        margin-right: 1in;
+        margin-right: 5%;
         /*margin-right: 5in;*/
     }
     .workImages{
