@@ -10,7 +10,7 @@ header{
     margin-left: 1in;
     margin-right: 1in;
     margin-top: 1in;
-    position: static;
+    /*position: static;*/
 }
 .headerText {
     font-size: 25px;
@@ -28,7 +28,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: visible;
+    /*overflow: visible;*/
     flex-wrap: wrap;
 }
 .container2 {
@@ -41,7 +41,7 @@ header{
     justify-content: right;
 }
 .intro {
-    display: block;
+    /*display: block;*/
     
     margin: auto;
 }
@@ -58,7 +58,7 @@ header{
     margin: 0px;
 }
 .normText {
-    font-size: 15px;
+    font-size: 1.8vw;
 
 }
 .skills_topic{
@@ -97,8 +97,8 @@ li {
 .workImages {
     text-align: center;
     flex-basis: 100%;
-    max-width: 400px;
-    min-width: 400px;
+    max-width: 30%;
+    min-width: 30%;
 }
 .workDescription{
     font-size: 25px;
@@ -114,8 +114,8 @@ li {
 
 @media (min-width: 600px){
     body {
-        max-width: 2527px;
-        min-width: 1427px;
+        /*max-width: 2527px;
+        min-width: 1427px;*/
     }
     #icon {
         width: 300px;
@@ -126,7 +126,7 @@ li {
         flex-wrap: nowrap;
     }
     .headerText{
-        font-size: 55px;
+        font-size: 2vw;
         margin-right: 5in;
         margin-left: 2in;
     }
@@ -147,28 +147,33 @@ li {
         margin: 1in;
     }
     .normText{
-        margin-right: 3in;
-        margin-left: 3in;
+        font-size: 1vw;
+        margin-right: 15%;
+        margin-left: 15%;
     }
     .intro{
-        max-width: 2200px;
-        min-width: 2200px;
+        /*max-width: 2200px;
+        min-width: 2200px;*/
     }
     .project{
         flex-wrap: nowrap;
         text-align: left;
+        display: flex;
+        /*
         max-width: 2335px;
-        min-width: 2335px;
+        min-width: 2335px; */
     }
     .workDescription{
         flex-basis: 50%;
-        margin-right: 5in;
+        font-size: 1vw;
+        margin-right: 1in;
+        /*margin-right: 5in;*/
     }
     .workImages{
         flex-basis: 50%;
         margin-left: 0px;
-        max-width: 700px;
-        min-width: 700px;
+        width: 30%;
+        height: 20%;
         margin-right: 1in;
         margin-left: 1in;
     }
