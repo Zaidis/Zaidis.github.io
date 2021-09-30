@@ -47,6 +47,7 @@ td {
     transition: opacity 0.3s;
     opacity: 100%; 
     width: 75px;
+    
     border-radius: 8px;
     /*position: absolute;*/
     margin: 0;
