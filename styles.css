@@ -1,6 +1,6 @@
 body{
     background-color: hsl(0, 0%, 15%);
-    
+    margin: 0;
 }
 p{
     color: hsl(0, 0%, 85%);
@@ -12,6 +12,49 @@ header{
     margin-top: 1in;
     /*position: static;*/
 }
+td {
+    margin: 0;
+}
+/*============NAVBAR MENU SECTION================ */
+.navBar {
+    /*background-color: hsl(0, 0%, 7%);*/
+    background-color: rgba(12, 12, 12, 255);
+    opacity: 90%;
+    width: 100%;
+    
+    display: flex;
+    align-items:center;
+    
+}
+.navSection {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 300%;
+    color: white;
+    position: sticky;
+    top: 0%;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    
+}
+.menu{
+    display: flex;
+    flex: 1;
+    justify-content: right;
+    right: 0%;
+}
+.menuIcon {
+    transition: opacity 0.3s;
+    opacity: 100%; 
+    width: 75px;
+    border-radius: 8px;
+    /*position: absolute;*/
+    margin: 0;
+}
+.menuIcon:hover {
+    opacity: 75%;
+}
+/*============NAVBAR MENU SECTION================ */
 .headerText {
     font-size: 25px;
     flex-basis: 100%;
@@ -35,11 +78,7 @@ header{
     display: flex;
     justify-content: center;
 }
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: right;
-}
+
 .intro {
     /*display: block;*/
     
@@ -71,9 +110,6 @@ header{
 .skills_good{
     font-size: 10px;
 }
-ul {
-    list-style-type: none;
-}
 li {
     float: left;
     display: block;
@@ -83,15 +119,6 @@ li {
     color: hsl(0, 0%, 85%);
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
-}
-.menuIcon {
-    transition: width 0.3s;
-    width: 75px; 
-    border-radius: 8px;
-    position: absolute;
-}
-.menuIcon:hover {
-    width: 80px;
 }
 
 .workImages {
