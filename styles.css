@@ -56,7 +56,7 @@ td {
     transition: opacity 0.3s;
     opacity: 100%; 
     /*position: absolute;*/
-    margin-right: 50%;
+    
 }
 .menuSectionButton:hover {
     opacity: 75%;
