@@ -35,7 +35,6 @@ td {
     margin: 0;
     padding: 0;
     z-index: 1;
-    
 }
 .menu{
     display: flex;
@@ -51,6 +50,16 @@ td {
     border-radius: 8px;
     /*position: absolute;*/
     margin: 0;
+}
+.menuSectionButton {
+    color: white;
+    transition: opacity 0.3s;
+    opacity: 100%; 
+    /*position: absolute;*/
+    margin-right: 50%;
+}
+.menuSectionButton:hover {
+    opacity: 75%;
 }
 .menuIcon:hover {
     opacity: 75%;
