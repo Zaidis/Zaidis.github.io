@@ -15,6 +15,9 @@ header{
 td {
     margin: 0;
 }
+html {
+     scroll-behavior: smooth;
+}
 /*============NAVBAR MENU SECTION================ */
 .navBar {
     /*background-color: hsl(0, 0%, 7%);*/
