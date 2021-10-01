@@ -59,12 +59,17 @@ html {
     opacity: 100%; 
 }
 .menuSectionButton:hover {
-    background-color: rgb(104, 0, 90)
+   /*background-color: rgb(104, 0, 90)*/
+   background-color: blueviolet;
 }
 .menuIcon:hover {
     opacity: 75%;
 }
 /*============NAVBAR MENU SECTION================ */
+.sectionDivider {
+    height: 81px;
+    
+}
 .headerText {
     font-size: 25px;
     flex-basis: 100%;
@@ -100,11 +105,13 @@ html {
 }
 .sep{
     width: 300px;
-    
+    padding-bottom: 10px;
 }
 .sepText {
     font-size: 40px;
     margin: 0px;
+    padding-top: 10px;
+
 }
 .normText {
     font-size: 1.8vw;
@@ -112,6 +119,7 @@ html {
 }
 .skills_topic{
     font-size: 15px; 
+
     color: aquamarine;
 }
 .skills_great{
@@ -168,7 +176,11 @@ li {
         margin-left: 2in;
     }
     .normText{
-        font-size: 30px;
+        font-size: 1vw;
+        margin-right: 15%;
+        margin-left: 15%;
+        margin-bottom: 0;
+        margin-top: 0;
     }
     .skills_topic{
         font-size: 30px; 
@@ -181,12 +193,8 @@ li {
         font-size: 20px;
     }
     .section{
-        margin: 1in;
-    }
-    .normText{
-        font-size: 1vw;
-        margin-right: 15%;
-        margin-left: 15%;
+        
+        
     }
     .intro{
         /*max-width: 2200px;

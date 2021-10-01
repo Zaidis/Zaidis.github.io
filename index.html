@@ -20,14 +20,14 @@
             </div>
             <div style="margin-left: 1em;">
                 <table>
-                    <td >
+                    <td>
                         <div class="menuSectionButton">
                             <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">About Me</b></div></a>
                         </div>
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#skills" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">My Skills</b></div></a>
+                            <a href="#skills" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Talents</b></div></a>
                         </div>
                     </td>
                     <td>
@@ -37,7 +37,7 @@
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Contact Me</b></div></a>
+                            <a href="#contact" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Contact Me</b></div></a>
                         </div>
                     </td>
                     <td>
@@ -50,10 +50,10 @@
             <div class="menu">
                 <table>
                     <td>
-                        <a href="https://zaidisx.itch.io/" style="display: flex;"><img src="Images/itchIcon.png" class="menuIcon"></a>
+                        <a href="https://zaidisx.itch.io/" style="display: flex;" target="_blank" rel="noopener noreferrer"><img src="Images/itchIcon.png" class="menuIcon"></a>
                     </td>
                     <td>
-                        <a href="https://github.com/Zaidis" style="display: flex;"><img src="Images/githubLogo.png" class="menuIcon"></a>
+                        <a href="https://github.com/Zaidis" style="display: flex;" target="_blank" rel="noopener noreferrer"><img src="Images/githubLogo.png" class="menuIcon"></a>
                     </td>
                 </table>
                 
@@ -72,16 +72,17 @@
             </div>
         </div>
     </header>
-    <div id="aboutMe"></div>
-    <section class="section"> <!--About Me Section-->
-        <div>
+    <div id="aboutMe" class="sectionDivider"></div>
+    <section class="section" > <!--About Me Section-->
+        <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText" >
                 About Me
             </p>
+            <img src = "Images/separater.png" alt="sep" class = "sep">
         </div>
-        <img src = "Images/separater.png" alt="sep" class = "sep">
-        <div>
-            <p class="normText">
+        
+        <div style="background-color: blueviolet;">
+            <p class="normText"> <br>
                 I am a senior at University of Wisconsin - Whitewater striving for a Bachelor of Science in Computer Science and Media Arts and Game Development - Communication/Gaming. I have made the deans list in every semester so far, and I intend
                 to keep that streak to the end. <br><br>
 
@@ -93,21 +94,19 @@
                 numerous game jams during the school years and summers. <br><br>
 
                 I push myself to become better everyday. Making games is my passion, and I hope one day that I can be a part of a great team working for the same goal: to create amazing games that will be cherished by many. <br><br>
-
-                <i style="color: white;">If you have any questions or want to work with me, please send me an email!</i><br>
-                <i style="color: white;">zaidisgames@gmail.com</i>
             </p>
         </div>
         
     </section>
-    <div id="skills" style="overflow: auto;"></div>
-    <section class="section"> <!--My Skills-->
-        <div>
+    <div id="skills" style="overflow: auto; position: absolute; margin-top: -81px;" class="sectionDivider"></div>
+    <section class="section" > <!--My Skills-->
+        <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText">
-                My Skills
+                Talents
             </p>
+            <img src = "Images/separater.png" alt="sep" class = "sep">
         </div>
-        <img src = "Images/separater.png" alt="sep" class = "sep">
+        
         <div class="container2">
             <div style="margin-right: 1in;">
                 <p class="skills_topic">Languages</p>
@@ -134,14 +133,15 @@
             
         </div>
     </section>
-    <div id="projects" style="overflow: auto;"></div>
-    <section class="section"> <!--My-->
-        <div>
+    <div id="projects" style="overflow: auto; " class="sectionDivider"></div>
+    <section class="section"> <!--My Work-->
+        <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText">
                 My Work
             </p>
+            <img src = "Images/separater.png" alt="sep" class = "sep">
         </div>
-        <img src = "Images/separater.png" alt="sep" class = "sep">
+        
         <div class="project">
             <img src="Images/anima.png" alt="anima" class="workImages">
             <div class="workDescription">
@@ -205,6 +205,22 @@
                 <p>Fall 2020</p>
             </div>
         </div>
+    </section>
+    <div id="contact" style="overflow: auto;" class="sectionDivider"></div>
+    <section class="section" style="background-color: blueviolet;"> <!--Contact Me Section-->
+        <div>
+            <p class="sepText" >
+                Contact Me
+            </p>
+            <img src = "Images/separater.png" alt="sep" class = "sep">
+        </div>
+        
+        <div>
+            <p class="normText">
+                If you have any questions or wish to work with me, please send me an email at <b style="color: aquamarine;">zaidisgames@gmail.com</b>!
+            </p>
+        </div>
+        
     </section>
 </body>
 
