@@ -24,10 +24,8 @@ html {
     background-color: rgba(12, 12, 12, 255);
     opacity: 90%;
     width: 100%;
-    
     display: flex;
     align-items:center;
-    
 }
 .navSection {
     font-family: 'Ubuntu', sans-serif;
@@ -49,20 +47,19 @@ html {
     transition: opacity 0.3s;
     opacity: 100%; 
     width: 75px;
-    
     border-radius: 8px;
-    /*position: absolute;*/
     margin: 0;
 }
 .menuSectionButton {
     color: white;
-    transition: opacity 0.3s;
+    background-color: rgba(12, 12, 12, 255);
+    font-size: 50%;
+    line-height: 300%;
+    transition: background-color linear 0.3s;
     opacity: 100%; 
-    /*position: absolute;*/
-    
 }
 .menuSectionButton:hover {
-    opacity: 75%;
+    background-color: rgb(104, 0, 90)
 }
 .menuIcon:hover {
     opacity: 75%;
