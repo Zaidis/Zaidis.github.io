@@ -93,16 +93,16 @@ html {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    line-height: 35px;
     text-align: center;
-    font-weight: 100;
     color: hsl(0, 0%, 85%);
     font-family: 'Ubuntu', sans-serif;
     font-size: 30px;
     padding-top: 15px;
     padding-bottom: 15px;
     box-sizing: border-box;
+    transition: 0.3s ease-in-out;
 }
+
 .project{
     max-width: 450px;
     margin-left: auto;
@@ -116,13 +116,14 @@ html {
 .workLink{
     display: inline;
     box-sizing: border-box;
+    
 }
 .workItem {
     height: 360px;
     position: relative;
     transition: all 0.3s ease-in-out;
     box-sizing: border-box;
-    border: 2px solid;
+    border: 2px solid black;
     
     overflow: visible;
     z-index: 2;
@@ -153,9 +154,42 @@ html {
     padding: 5px;
     border: 2px solid black;
     margin-right: 5px;
+    transition: 0.3s ease-in-out;
+}
+.tag:hover {
+    border-color: azure;
 }
 /* ============PROJECTS SECTION================ */
+/* ============NEW PAGE SECTION================ */
 
+
+.headerImage {
+    width: 100%;
+}
+.gameTitle {
+    background-color: rgb(99, 31, 163);
+    text-align: center;
+    color: hsl(0, 0%, 85%);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 2%;
+    font-size: 40px;
+}
+.gameDescription {
+    color: hsl(0, 0%, 85%);
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(26, 26, 26);
+    font-size: 150%;
+    padding: 1%;
+    line-height: 150%;
+    text-align: center;
+}
+.contribution {
+    font-size: 200%;
+    padding-top: 2%;
+    padding-bottom: 0.7%;
+}
+
+/* ============NEW PAGE SECTION================ */
 .sectionDivider {
     height: 81px;
     
