@@ -66,6 +66,95 @@ html {
     opacity: 75%;
 }
 /*============NAVBAR MENU SECTION================ */
+
+/* ============PROJECTS SECTION================ */
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.workMainContainer {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    
+}
+.workContainer {
+    width: 25%;
+    
+}
+.workTitle {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    line-height: 35px;
+    text-align: center;
+    font-weight: 100;
+    color: hsl(0, 0%, 85%);
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.project{
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.workLink{
+    display: inline;
+    box-sizing: border-box;
+}
+.workItem {
+    height: 360px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+    border: 2px solid;
+    
+    overflow: visible;
+    z-index: 2;
+}
+.workItem:hover {
+    border-color: blueviolet;
+    
+}
+.workItemImage {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: black;
+    background-repeat: no-repeat;
+}
+.tagContainer {
+    display: flex;
+    padding-top: 10px;
+    color: hsl(0, 0%, 85%);
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+.tag {
+    padding: 5px;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+/* ============PROJECTS SECTION================ */
+
 .sectionDivider {
     height: 81px;
     
@@ -139,6 +228,7 @@ li {
     font-family: 'Ubuntu', sans-serif;
 }
 
+
 .workImages {
     text-align: center;
     flex-basis: 100%;
@@ -150,12 +240,7 @@ li {
     
     flex-basis: 100%;
 }
-.project{
-    display: flex;
-    text-align: center;
-    flex-wrap: wrap;
-    margin-top: 0.3in;
-}
+
 
 @media (min-width: 600px){
     body {
@@ -201,10 +286,11 @@ li {
         min-width: 2200px;*/
     }
     .project{
+        /*
         flex-wrap: nowrap;
         text-align: left;
         display: flex;
-        /*
+        
         max-width: 2335px;
         min-width: 2335px; */
     }
