@@ -75,6 +75,7 @@ html {
     flex-wrap: wrap; 
     box-sizing: border-box;
     overflow: hidden;
+    /* */
 }
 .workMainContainer {
     width: 100%;
