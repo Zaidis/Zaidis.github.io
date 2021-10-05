@@ -190,12 +190,21 @@ html {
 }
 
 /* ============NEW PAGE SECTION================ */
+#dropDownMenu {
+    
+}
+.dropDownMenuIcon{
+
+}
+#dropDownIcon {
+    visibility: visible;
+}
 .sectionDivider {
     height: 81px;
     
 }
 .headerText {
-    font-size: 25px;
+    font-size: 200%;
     flex-basis: 100%;
     text-align: center;
 }
@@ -252,16 +261,7 @@ html {
 .skills_good{
     font-size: 10px;
 }
-li {
-    float: left;
-    display: block;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-    color: hsl(0, 0%, 85%);
-    font-size: 40px;
-    font-family: 'Ubuntu', sans-serif;
-}
+
 
 
 .workImages {
@@ -270,17 +270,11 @@ li {
     max-width: 30%;
     min-width: 30%;
 }
-.workDescription{
-    font-size: 25px;
-    
-    flex-basis: 100%;
-}
 
 
 @media (min-width: 600px){
-    body {
-        /*max-width: 2527px;
-        min-width: 1427px;*/
+    #dropDownIcon {
+        visibility: hidden;
     }
     #icon {
         width: 300px;
@@ -291,9 +285,13 @@ li {
         flex-wrap: nowrap;
     }
     .headerText{
-        font-size: 2vw;
-        margin-right: 5in;
-        margin-left: 2in;
+       font-size: 2vw;
+       padding-right: 70px;
+       padding-left: 70px;
+       margin-right: auto;
+       margin-left: auto;
+        /*margin-right: 5in;
+        margin-left: 2in;*/
     }
     .normText{
         font-size: 1vw;
@@ -311,29 +309,6 @@ li {
     }
     .skills_good{
         font-size: 20px;
-    }
-    .section{
-        
-        
-    }
-    .intro{
-        /*max-width: 2200px;
-        min-width: 2200px;*/
-    }
-    .project{
-        /*
-        flex-wrap: nowrap;
-        text-align: left;
-        display: flex;
-        
-        max-width: 2335px;
-        min-width: 2335px; */
-    }
-    .workDescription{
-        flex-basis: 50%;
-        font-size: 1vw;
-        margin-right: 5%;
-        /*margin-right: 5in;*/
     }
     .workImages{
         flex-basis: 50%;
