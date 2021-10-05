@@ -257,7 +257,9 @@ html {
     padding-top: 10px;
 }
 .normText {
-    font-size: 1.8vw;
+    font-size: 3vw;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 .skills_topic{
     font-size: 15px; 
