@@ -12,6 +12,9 @@
     <title> Adam Weber - Portfolio</title>
 </head>
 <body id="top">
+    <script>
+        
+    </script>
     <div class="navSection">
         <div class="navBar">
             <div style="margin-left: 1em;">
@@ -23,45 +26,65 @@
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">About Me</b></div></a>
+                            <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">About Me</b></div></a>
                         </div>
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#skills" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Talents</b></div></a>
+                            <a href="#skills" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Talents</b></div></a>
                         </div>
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#projects" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Projects</b></div></a>
+                            <a href="#projects" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Projects</b></div></a>
                         </div>
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#contact" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Contact</b></div></a>
+                            <a href="#contact" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Contact</b></div></a>
                         </div>
                     </td>
                     <td>
                         <div class="menuSectionButton">
-                            <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: white;">Résumé</b></div></a>
+                            <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Résumé</b></div></a>
                         </div>
                     </td>
                 </table>
-                
             </div>
             <div class="menu">
                 <table id="dropDownMenu">
-                    <td class="dropDownMenuItem" id="dropDownIcon">
-                        <a href="https://github.com/Zaidis" style="display: flex;" target="_blank" rel="noopener noreferrer"><img src="Images/menuDropDown.png" class="menuIcon"></a>
+                    <td id="dropDownIcon">
+                        <img src="Images/menuDropDown.png" class="menuIcon"  onclick="document.getElementById('dropDownElement').classList.toggle('active')" style="display: flex;">
+                        <div id="dropDownElement">
+                            <div>
+                                <a href="#top" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: aquamarine;">Adam Weber</b></a>
+                            </div>
+                            <div>
+                                <a href="#aboutMe" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">About Me</b></a>
+                            </div>
+                            <div>
+                                <a href="#skills" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Talents</b></a>
+                            </div>
+                            <div>
+                                <a href="#projects" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Projects</b></a>
+                            </div>
+                            <div>
+                                <a href="#contact" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Contact</b></a>
+                            </div>
+                            <div>
+                                <a href="#aboutMe" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Résumé</b></a>
+                            </div>
+                            <div>
+                                <a href="https://zaidisx.itch.io/" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Itch</b></a>
+                            </div>
+                            <div>
+                                <a href="https://github.com/Zaidis" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Github</b></a>
+                            </div>
+                        </div>
                     </td>
-                    <td class="dropDownMenuItem">
-                        <a href="https://zaidisx.itch.io/" style="display: flex;" target="_blank" rel="noopener noreferrer"><img src="Images/itchIcon.png" class="menuIcon"></a>
-                    </td>
-                    <td class="dropDownMenuItem">
-                        <a href="https://github.com/Zaidis" style="display: flex;" target="_blank" rel="noopener noreferrer"><img src="Images/githubLogo.png" class="menuIcon"></a>
-                    </td>
-                    
                 </table>
+                <a href="https://zaidisx.itch.io/"  target="_blank" rel="noopener noreferrer" class="menuSectionButton"><img src="Images/itchIcon.png" class="menuIcon"></a>
+                <a href="https://github.com/Zaidis"  target="_blank" rel="noopener noreferrer"  class="menuSectionButton"><img src="Images/githubLogo.png" class="menuIcon"></a>
             </div>
         </div>
     </div>
