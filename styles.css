@@ -26,6 +26,8 @@ html {
     width: 100%;
     display: flex;
     align-items:center;
+    overflow: auto;
+    
 }
 .navSection {
     font-family: 'Ubuntu', sans-serif;
@@ -102,7 +104,6 @@ html {
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
 }
-
 .project{
     max-width: 450px;
     margin-left: auto;
@@ -161,8 +162,6 @@ html {
 }
 /* ============PROJECTS SECTION================ */
 /* ============NEW PAGE SECTION================ */
-
-
 .headerImage {
     width: 100%;
 }
@@ -188,7 +187,6 @@ html {
     padding-top: 2%;
     padding-bottom: 0.7%;
 }
-
 /* ============NEW PAGE SECTION================ */
 #dropDownMenu {
     
@@ -201,7 +199,6 @@ html {
 }
 .sectionDivider {
     height: 81px;
-    
 }
 .headerText {
     font-size: 200%;
@@ -226,10 +223,7 @@ html {
     display: flex;
     justify-content: center;
 }
-
 .intro {
-    /*display: block;*/
-    
     margin: auto;
 }
 .section {
@@ -244,15 +238,12 @@ html {
     font-size: 40px;
     margin: 0px;
     padding-top: 10px;
-
 }
 .normText {
     font-size: 1.8vw;
-
 }
 .skills_topic{
     font-size: 15px; 
-
     color: aquamarine;
 }
 .skills_great{
@@ -261,17 +252,12 @@ html {
 .skills_good{
     font-size: 10px;
 }
-
-
-
 .workImages {
     text-align: center;
     flex-basis: 100%;
     max-width: 30%;
     min-width: 30%;
 }
-
-
 @media (min-width: 600px){
     #dropDownIcon {
         visibility: hidden;
