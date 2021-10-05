@@ -277,9 +277,7 @@ html {
     max-width: 30%;
     min-width: 30%;
 }
-
-
-@media (min-width: 600px){
+@media (min-width: 900px){
     .workContainer {
         width: 25%;
         
