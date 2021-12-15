@@ -36,7 +36,7 @@ html {
     top: 0%;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 10;
 }
 .menu{
     display: flex;
@@ -103,6 +103,7 @@ html {
     padding-bottom: 15px;
     box-sizing: border-box;
     transition: 0.3s ease-in-out;
+    z-index: 2;
 }
 .project{
     max-width: 450px;
@@ -113,6 +114,8 @@ html {
     box-sizing: border-box;
     margin-top: 50px;
     margin-bottom: 50px;
+    display: block;
+    z-index: 0;
 }
 .workLink{
     display: inline;
