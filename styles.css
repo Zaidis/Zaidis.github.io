@@ -259,6 +259,11 @@ html {
     margin: 0px;
     padding-top: 10px;
 }
+.sepTextSmall {
+    font-size: 20px;
+    margin: 0px;
+    
+}
 .normText {
     font-size: 3vw;
     margin-right: 5%;
