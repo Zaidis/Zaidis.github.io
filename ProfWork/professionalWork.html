@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+        
+        <style>
+            body {
+                margin-right: 0%;
+                margin-left: 0%;
+                margin-top: 3%;
+                font-size: 0.7rem;
+                background-image: url('../ProfWork/background.png');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            span {
+                color: aquamarine;
+            }
+            video {
+                width: 85%;
+                margin: auto;
+                padding: 1%;
+                
+            }
+            
+            section{
+                margin-top: 1%;
+            }
+
+            @media (min-width: 900px){
+                body{
+                    margin-right: 25%;
+                    margin-left: 25%;
+                    margin-top: 3%;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+       
+        <section >
+            <div class="gameTitle">
+                Professional Work
+            </div>
+            <div class="gameDescription"> 
+                This is a page dedicated to my projects within professional environments and work studios. Note that I may be under an NDA with many or all of these 
+                companies. Therefore, I will showcase these projects as much as I can and talk about what I have done without breaching contract.<br><br>
+
+                If you have any questions or wish to speak more about a project, please feel free to contact me!<br><br>
+
+            </div> 
+        </section>
+        <div class="prof_companyLogo">
+            <a href="https://www.filamentgames.com/"><img src="../ProfWork/filamentLogo.png" style=" width: 100%;" ></a>
+        </div>
+        <section>     
+            <div class="gameTitle">
+                Project: CASA
+            </div>
+            <div class="gameDescription">
+                <div>
+                    <table style=" margin: auto;">
+                        <tbody>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Timeframe</strong>
+                                </td>
+                                <td class="prof_td">July 2022 - January 2024</td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Languages Used</strong>
+                                </td>
+                                <td class="prof_td">
+                                    <div class="tagContainer" style="line-height: 100%; font-size: 75%; padding-top: 0;">
+                                        <div class="tag" style="background-color: rgb(99, 0, 129); ">
+                                            <span style="color: white;">C#</span>
+                                        </div>
+                                        <div class="tag" style="background-color: rgb(0, 124, 82);">
+                                            <span style="color: white;">Typescript</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Softwares Used</strong>
+                                </td>
+                                <td class="prof_td">Unity, Postman, Docker</td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Framework</strong>
+                                </td>
+                                <td class="prof_td">Nest JS, Prisma</td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Project Role</strong>
+                                </td>
+                                <td class="prof_td">Game Engineer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div>
+                    <p> CASA (Computer Adaptive Story Assessment) was my primary project that I worked on during my employment at Filament Games. The purpose of this
+                        application is to assess children within the ages of three to five through various types of language and positional skills. The game was 
+                        made for English and Spanish children with support for both languages. To read more about this project, a blog post was made 
+                        <a href="https://www.filamentgames.com/blog/how-universities-are-advancing-game-based-learning-research-part-2/" target="_blank">here</a>. 
+                        <br><br>
+                        The project was separated into three unique structures. One such structure was the <span>Unity application</span> that was designed for the children to interact with questions. 
+                        Another was the <span>teacher dashboard</span> which allowed the teacher to interact with their students during the assessment. Lastly there was the
+                        <span>server backend</span> which was in charge of handeling all inputs and outputs, REST calls, socket.io interaction, and our database for the researchers. <br><br>
+                    </p>
+                    <p>
+                        During my time on the project, I worked in both the Unity app and the server backend to ensure the bridge between both was efficient, secure, and adaptable to 
+                        make any changes that were required to be made during the university's calibration process. I worked in a scrum environment alongside web developers, UX/UI, producers, designers, and 
+                        other engineers. 
+                    </p>
+                </div>
+
+                <aside class="accordion"> 
+                    <h1>
+                        Unity Application
+                        <strong class="accordion_icon icon_idle">
+                            +
+                        </strong>
+                    </h1>
+                    <div class="initialTab">
+                        <p>
+                           Students who play CASA will be answering various questions from either a set list created by researchers or through a random generated list created by the 
+                           researcher's CAT (Computerized adaptive testing) algorithm. I explain more about that in the Server Backend section. <br><br>
+
+                           Each question is set to have up to three different VO prompts; each are the same except for the dialect that it uses. As an example, an English question has access to 
+                           Latin, Black, and White dialects, all of which were given to us by the clients. <br><br>
+                           
+                           The game, while acting as a source of research, needed to feel fun for the users who were all under the age of five. To make our client's dream game come to life, I worked alongside a game designer, 
+                           UX/UI designers, and producers to make this happen. <br><br>
+                           
+                           
+                        </p> 
+                        <img src="../ProfWork/casa_img_1.png">
+                        <img src="../ProfWork/casa_img_2.png">
+                        <h2 class="accordion_initial">
+                            Gameplay Loop
+                            <strong class="accordion_icon icon_idle">
+                            +
+                            </strong>
+                        </h2>
+                        <div class="new_tab">
+                            <p>
+                                The gameplay loop is as followed: Select Avatar, Training, Assessment/Story, Finish. <br><br>
+                                
+                                If the user is brand new to the program, they first must select an avatar. This avatar is the student's portrayal in the game. They may choose any of 
+                                the possible avatars depending on the scene they are in (Grocery store or Festival) and their language. Each Avatar includes a parent and a child. <br><br>
+
+                            </p>
+                            <h3 class="accordion_initial">
+                                Training
+                                <strong class="accordion_icon icon_idle">
+                                    +
+                                </strong>
+                            </h3>
+                            <div class="new_tab">
+                                <p>
+                                    All students regardless of how much time they have spent in CASA will start their game in the Training scene. I was the sole game engineer in charge of designing the code and editor
+                                    architecture for the Training system. The purpose of the training scene is to allow the student to practice all three question types before going into the main assessment. If 
+                                    the student fails to answer both the touch and drag questions correctly, they are sent back to the main menu rather than proceeding to the real assessment. <br><br>
+
+                                    Each training question gives the player three attempts to score correctly. For every failed attempt, the question either plays a VO hint or visual animation hint depending on the question.  
+                                    Answering a training question correctly results in a positive compliment VO towards the user. <br><br>
+
+                                    Here is a clip of the touch training question. The question will ask the user to "find the cart." As shown, the user selects the cart, then on the teacher dashboard, 
+                                    the teacher will confirm the selection. From there, the game will check to see if the selection was correct. If so, the game moves on to the next question. <br><br>
+
+                                    As a side note, the teacher dashboard also allows the question to be restarted. In addition, the dashboard also allows for the question prompt to be replayed. This occurs in both 
+                                    training and the normal assessment. 
+                                </p>
+                                <video loop autoplay muted>
+                                    <source src="../ProfWork/casa_3.mp4" type="video/mp4">
+                                </video>
+                                <p>
+                                    Lastly, here is a clip of the festival training scene where it uses glasses as the main item across all three questions. 
+                                </p>
+                                <video loop autoplay muted>
+                                    <source src="../ProfWork/casa_festTraining.mp4" type="video/mp4">
+                                </video>
+                            </div>     
+                            <h3 class="accordion_initial">
+                                Assessment
+                                <strong class="accordion_icon icon_idle">
+                                    +
+                                </strong>
+                            </h3>
+                            <div class="new_tab">
+                                <p>
+                                    The assessment in CASA takes place in one of four areas depending on the scene. Each of these areas have their own theme in both the artstyle and question content. Questions made for 
+                                    the picnic area in the Festival are often themed around food, foodtrucks, or picnic supplies. The animal section of the festival is obviously themed around animals. <br><br>
+
+                                    It was my job to construct the systems for proper question spawning, question importing, and general gameplay code for each of the three types of questions. <br><br>
+
+                                    CASA has several types of questions. The three main types consist of touch questions where the user touches an item(s) to select it for an answer. Drag questions required
+                                    the user to drag items into some form of container such as a box or grocery cart. Lastly there are speak questions which simply need the user to speak for an answer and
+                                    the teacher will score the question manually. Questions also do not look the same with each having a different spawn configuration of items, different amount of items, different 
+                                    visual setting in the game (example, one question could be in the dairy aisle, another could be in the produce section). <br><br>
+
+                                    The gameplay loop for a question is: Question prompt plays -> all item VO (if there are any item VO) plays sequentially in order from first to last -> student answers question -> teacher proceeds to 
+                                    next question / replays question. <br><br>
+
+                                </p>
+                                <h4 class="accordion_initial">
+                                    Question Spawning 
+                                    <strong class="accordion_icon icon_idle">
+                                        +
+                                    </strong>
+                                </h4>
+                                <div class="new_tab">
+                                    <p>
+                                        I, alongide my senior engineer, created a system that allowed to generate questions as objects from a Google Sheets page. This sheet was dedicated for creating all types
+                                        of questions with any info they would require to show in game, including its spawn configuration, its setting/scene, the correct answer(s), art, language, and more. Each of these 
+                                        objects have an ID that we use to match with whatever ID the server backend gives the app. From there, the system instantiates all objects inside of the set configuration, stores 
+                                        the correct answer(s) for when we score the question, and prints the question ID and sentence for the researchers to see.  <br><br>
+        
+                                        Here is an example of a Drag Question using the "single spawn config." It's container is a grocery cart and the items include three different types of cheese. The correct answer is the 
+                                        queso redondo (middle item). Our system imported this question from the Google Sheet to make a scriptable object. Then, after matching its ID with the backend, the game took this object 
+                                        and used its information to spawn the question that the student would see and interact with.  
+                                    </p>
+                                    <video loop autoplay muted>
+                                        <source src="../ProfWork/casa_1.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <h1>
+                        Server Backend
+                        <strong class="accordion_icon icon_idle">
+                            +
+                        </strong>
+                    </h1>
+                    <div class="initialTab">
+                        <p>
+                            The server backend is in charge of handeling all game info being sent to or sent from the Unity application via REST calls. These calls include submitting an answer, grabbing a new question, 
+                            finishing the assessment, and editing the student's entry in the database for the researchers to access in the teacher dashboard. <br><br>
+
+                            It was my job to create both the selection manager which handles grabbing new questions as well as the overall session manager that handles the REST calls that sends or obtains info from the app. We used Nest.JS as 
+                            our framework for the server backend, socket.io as our communication library, and prisma.io for our database to store student info including their assessments. This was all written using Typescript and Node.js. 
+                            Additionally, I worked on the bridge connection from the server backend to the game application by adding all REST calls to the game through a unity socket.io library to ensure efficient communication. <br><br>
+                            
+                            Assessments in the Unity game are all the same, codewise. However, in the server backend there are two different types of assessments: Calibration and CAT. The only difference between the two is that 
+                            calibration uses set lists of questions provided by the researchers, whereas CAT assessments use randomly selected questions dependent on student score. The purpose of calibration was for the researchers to 
+                            find adequate difficulty values for each question manually, of which they would then update the questions for CAT. 
+                        </p>
+              
+                        <h2 class="accordion_initial">
+                            Selection
+                            <strong class="accordion_icon icon_idle">
+                                +
+                            </strong>
+                        </h2>
+                        <div class="new_tab">
+                            <p>
+                                CASA uses what is called a "CAT" algorithm that was given to my team from the client researchers. This algorithm allowed for us to determine which question to send to the app depending on 
+                                how well the student is answering questions in the assessment. Each question has its own difficulty value (set by the researchers). When the game asks via socket.io for a new question, 
+                                the Selection Manager will take the student's score and after going through various calculations (functions given to us by the researchers), it will randomly select a question within a close range of 
+                                the current score. <br><br>
+
+                                Example: If a student's score is 5, the Selection Manager will find all questions roughly near 5 and randomly select one to send to the game, specifically its ID. <br><br>
+
+                                If this assessment was Calibration, the Session Manager would skip the Selection Manager and simply pull from a premade list of questions. Calculations have no affect in calibration. 
+
+                                Architecturally, the Selection Manager is only ever able to talk to the Session Manager. 
+
+                            </p>
+                        </div>
+                        <h2 class="accordion_initial">
+                            Session
+                            <strong class="accordion_icon icon_idle">
+                                +
+                            </strong>
+                        </h2>
+                        <div class="new_tab">
+                            <p>
+                                The Session Manager simply handles all REST calls and stores player info in realtime to send to the database after an assessment completes. The Session Manager acted as the bridge between the server backend 
+                                and the Unity application, and it was important to ensure proper and secured communication occured between the Selection Manager, Session Manager, and Unity. <br><br>
+                                
+                                Whenever the game successfully submitted an answer which was triggered by the teacher dashboard via socket.io, the game would send all information through a JSON object to the Session Manager. From there, 
+                                the Session Manager adds the information to the player's current "profile" being held during the assessment and edit any current player values that needed to be edited, such as the player's current score, 
+                                amount of questions the player has answered, and more.<br><br>
+
+                                Getting a new question simply talks to the Selection Manager (shown above). <br><br>
+
+                                After an assessment completes which was triggered when the student answered the maximum amount of questions (or the selection manager failed to send a new question), all info is sent to the prisma 
+                                database for the researchers to use. That info included the student's final score, all submitted answers, all question IDs that were asked/answered, amount of time it took to complete the assessment, 
+                                and all final calculations that the researchers provided us through their functions.   
+                            </p>
+                            
+                        </div>
+                    </div>        
+                </aside>
+
+                <div class="carousel_container">
+                    <div class="carousel" id="carousel_0">
+                        <div class="carousel_slide">
+                            <img src="casa_img_3.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_4.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_5.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_6.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_7.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_8.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_9.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_10.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_11.png" style="width: 100%;">
+                        </div>
+                        <div class="carousel_slide">
+                            <img src="casa_img_12.png" style="width: 100%;">
+                        </div>
+                        <a class="prev" style="left: 0;" onclick="slideCarousel(0, 'left')"> &#8592 </a>
+                        <a class="next" style="right: 0;" onclick="slideCarousel(0, 'right')"> &#8594 </a>
+                    </div>
+                    
+                    <div class="carousel_gallery" id="gallery_0">
+                        <div style="width: 100%;">
+                            <img class="gallery_img" src="casa_img_3.png"  onclick="showSlide(0, 0)">
+                            <img class="gallery_img" src="casa_img_4.png"  onclick="showSlide(0, 1)">
+                            <img class="gallery_img" src="casa_img_5.png"  onclick="showSlide(0, 2)">
+                            <img class="gallery_img" src="casa_img_6.png"  onclick="showSlide(0, 3)">
+                            <img class="gallery_img" src="casa_img_7.png"  onclick="showSlide(0, 4)">
+                            <img class="gallery_img" src="casa_img_8.png"  onclick="showSlide(0, 5)">
+                        </div>
+                        <div style="width: 100%;">
+                            <img class="gallery_img" src="casa_img_9.png"  onclick="showSlide(0, 6)">
+                            <img class="gallery_img" src="casa_img_10.png"  onclick="showSlide(0, 7)">
+                            <img class="gallery_img" src="casa_img_11.png"  onclick="showSlide(0, 8)">
+                            <img class="gallery_img" src="casa_img_12.png"  onclick="showSlide(0, 9)">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section >
+            <div class="gameTitle">
+                Superkids Online Fun
+            </div>
+            <div class="gameDescription"> 
+                
+                <div>
+                    <table style=" margin: auto;">
+                        <tbody>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Timeframe</strong>
+                                </td>
+                                <td class="prof_td">October 2023 - January 2024</td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Languages Used</strong>
+                                </td>
+                                <td class="prof_td">
+                                    <div class="tagContainer" style="line-height: 100%; font-size: 75%; padding-top: 0;">
+                                        <div class="tag" style="background-color: rgb(99, 0, 129); ">
+                                            <span style="color: white;">C#</span>
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Softwares Used</strong>
+                                </td>
+                                <td class="prof_td">Unity</td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Project Role</strong>
+                                </td>
+                                <td class="prof_td">Game Engineer</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                The Superkids Reading program is a core literacy curriculum for kindergarten through second grade that teaches all aspects of reading, and is 
+                seamlessly integrated with the language arts. Built on scientific research and proven pedagogy, it combines rigorous instruction with highly 
+                motivating curricula. Filament Games developed the online game-based learning component of the Superkids Reading program, Superkids Online Fun!, 
+                which includes books and magazines that are read aloud to players, as well as a variety of spelling, phonetics, and vocabulary games to reinforce 
+                ELA learning outcomes. <br><br>
+                
+                To see more about this project, click <a href="https://www.filamentgames.com/project/superkids-online-fun/" target="_blank">here</a>!
+                <br><br>
+
+                <p>
+                    This is one of Filament's older projects before I was hired in 2022. For me, this was a <span>maintenance project</span> where my job was to remove 
+                    any of the rough edges and smaller bugs that client has found after the initial project was completed. <br><br>
+
+                    My work consisted of going through the established code base, finding and re-creating known bugs, and debugging using several devices including the unity 
+                    editor and my android device. The largest issue involved deep linking from a browser to the app on a phone device where the app would not log out 
+                    properly. I would find myself using an android SDK to console log throughout the gameplay to pin point possible solutions while working with 
+                    my senior engineer and manager. 
+                </p>
+
+            </div> 
+        </section>
+        <script type="text/javascript" src="../script.js"></script>
+    </body>
+
+</html>

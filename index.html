@@ -1,112 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-    -->
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <meta name="viewport" content="width=device-width">
     <title> Adam Weber - Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+    <script type="text/javascript" src="script.js"></script>
+
+    <style>
+        #cover_image {
+            background-image: url("Images/lyra_5.PNG");
+            background-repeat: none;
+            background-position: 0% 30%;
+            background-size: cover;
+            height: 650px;
+        }
+        #talents_image {
+            background-image: url('Images/faldihr_2.PNG'); 
+            background-repeat: none;
+            background-size: cover;
+            background-position: 10% 100%;
+        }
+    </style>
+
 </head>
 <body id="top">
-    <script>
-        
-    </script>
-    <div class="navSection">
-        <div class="navBar">
-            <div style="margin-left: 1em;">
-                <table>
-                    <td>
-                        <div>
-                            <a href="#top" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: aquamarine;">Adam Weber</b></a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menuSectionButton">
-                            <a href="#aboutMe" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">About Me</b></a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menuSectionButton">
-                            <a href="#skills" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Talents</b></a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menuSectionButton">
-                            <a href="#projects" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Projects</b></a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menuSectionButton">
-                            <a href="#contact" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Contact</b></a>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="menuSectionButton">
-                            <a href="Weber_Adam_Resume.pdf" target="_blank" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Résumé</b></a>
-                        </div>
-                    </td>
-                    
-                </table>
-            </div>
-            <div class="menu">
-                <table id="dropDownMenu">
-                    <td id="dropDownIcon">
-                        <img src="Images/menuDropDown.png" class="menuIcon"  onclick="document.getElementById('dropDownElement').classList.toggle('active')" style="display: flex;">
-                        <div id="dropDownElement">
-                            <div>
-                                <a href="#top" style="display: flex; text-decoration: none; padding-right: 15px; padding-left: 15px;" ><b style="color: aquamarine;">Adam Weber</b></a>
-                            </div>
-                            <div>
-                                <a href="#aboutMe" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">About Me</b></a>
-                            </div>
-                            <div>
-                                <a href="#skills" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Talents</b></a>
-                            </div>
-                            <div>
-                                <a href="#projects" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Projects</b></a>
-                            </div>
-                            <div>
-                                <a href="#contact" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Contact</b></a>
-                            </div>
-                            <div>
-                                <a href="Weber_Adam_Resume.pdf" target="_blank" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Résumé</b></a>
-                            </div>
-                            <div>
-                                <a href="https://zaidisx.itch.io/" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Itch</b></a>
-                            </div>
-                            <div>
-                                <a href="https://github.com/Zaidis" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Github</b></a>
-                            </div>
-                            <div>
-                                <a href="https://www.linkedin.com/in/adam-weber-847097238/" style="display: flex;  padding-right: 15px; padding-left: 15px;" class="menuItem"><b style="color: white;">Linked In</b></a>
-                            </div>
-                        </div>
-                    </td>
-                </table>
-                <a href="https://zaidisx.itch.io/"  target="_blank" rel="noopener noreferrer" class="menuSectionButton" style="margin-left: 3px;"><img src="Images/itchIcon.png" class="menuIcon"></a>
-                <a href="https://github.com/Zaidis"  target="_blank" rel="noopener noreferrer"  class="menuSectionButton" style="margin-left: 3px;"><img src="Images/githubLogo.png" class="menuIcon"></a>
-                <a href="https://www.linkedin.com/in/adam-weber-847097238/"  target="_blank" rel="noopener noreferrer"  class="menuSectionButton" style="margin-left: 3px;"><img src="Images/linkedIn.png" class="menuIcon"></a>
-
-            </div>
-        </div>
-    </div>
-    
     <header> <!--Header-->
-        <div class = "intro">
-            <div class="container">
-                <img src="Images/ICON.png" alt="icon" id="icon">
-                <p class="headerText">
-                    
-                    Hello! My name is <b style="color: aquamarine;">Adam Weber</b>. I am a passionate Game Programmer and Game Designer who has been making and developing games ever since the year 2018! 
-                </p>
+        
+        <div id="cover_image">
+            <div class="navbar_primary">
+                <div class="navbar_container sticky">
+                    <a class="navbar_element" href="#top"><b style="color: aquamarine;">Adam Weber</b></a>
+                    <a class="navbar_element" href="#aboutMe"><b style="color: white;" >About Me</b></a>
+                    <a class="navbar_element" href="#skills"><b style="color: white;">Talents</b></a>
+                    <a class="navbar_element" href="#projects" ><b style="color: white;">Projects</b></a>
+                    <a class="navbar_element" href="#contact" ><b style="color: white;">Contact</b></a>
+                    <a class="navbar_element" href="resume_adamWeber.pdf" target="_blank"  ><b style="color: white;">Résumé</b></a>
+                    <a class="navbar_element" href="ProfWork/professionalWork.html" target="_blank" ><b class="navbar_special">Professional Work</b></a>
+        
+                    <div class="navbar_icon_container sticky">
+                        <a class="navbar_element" href="https://zaidisx.itch.io/"  target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;"><img class="navbar_icon" src="Images/itchIcon.png" ></a>
+                        <a class="navbar_element" href="https://github.com/Zaidis"  target="_blank" rel="noopener noreferrer"   style="margin-left: 3px;"><img class="navbar_icon" src="Images/githubLogo.png"></a>
+                        <a class="navbar_element" href="https://www.linkedin.com/in/adam-weber-847097238/"  target="_blank" rel="noopener noreferrer"  style="margin-left: 3px;"><img class="navbar_icon" src="Images/linkedIn.png" ></a>
+                    </div>
+                    <div class="navbar_mobileMenu sticky">
+                        <a href="#top" style="display:flex; height:  100%; align-items: center; text-decoration: none; padding: 0 10px 0 10px;;"><b style="color: aquamarine; ">Adam Weber</b></a>
+                        <table style="height: 100%; margin-left: auto;">
+                            <td id="dropDownIcon">
+                                
+                                <a onclick="document.getElementById('dropDownElement').classList.toggle('active')" ><span class="material-symbols-outlined">menu</span></a>
+                                <div id="dropDownElement">
+                                
+                                    
+                                
+                                    <a class="navbar_mobileMenu_element" href="#aboutMe" ><b style="color: white;">About Me</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="#skills" ><b style="color: white;">Talents</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="#projects" ><b style="color: white;">Projects</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="#contact" ><b style="color: white;">Contact</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="resume_adamWeber.pdf" target="_blank" ><b style="color: white;">Résumé</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="https://zaidisx.itch.io/" ><b style="color: white;">Itch</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="https://github.com/Zaidis" ><b style="color: white;">Github</b></a>
+                                
+                                    <a class="navbar_mobileMenu_element" href="https://www.linkedin.com/in/adam-weber-847097238/"><b style="color: white;">Linked In</b></a>
+                                    
+                                    <a class="navbar_mobileMenu_element" href="ProfWork/professionalWork.html"><b style="color: white;">Professional Page</b></a>
+                                </div>
+                            </td>
+                        </table>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        
+        
     </header>
-    <div id="aboutMe" class="sectionDivider"></div>
+    <div id="aboutMe" class="sectionDivider" style="background-color: rgba(0, 0, 0, 0); margin-top: -60px;"></div>
     <section class="section" > <!--About Me Section-->
         <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText" >
@@ -117,24 +95,30 @@
         
         <div style="background-color: hsl(0, 0%, 15%); ">
             <p class="normText"> <br>
-                I am a graduate from <a href="https://www.uww.edu/" target="_blank" style="color: aquamarine;">University of Wisconsin - Whitewater</a> who obtained a Bachelor of Science in Computer Science and Media Arts and Game Development - Communication/Gaming. 
-                I have made the deans list in ever semester I was there, and graduated with <i style="color: aquamarine;">magna cum laude </i>.<br><br>
 
-                Before I went to college, I was a part of a <b><a href="https://www.firstinspires.org/robotics/frc" target="_blank" style="color: aquamarine;">F.I.R.S.T.</a></b> FRC team called <b style="color: aquamarine;">CORE 2062</b>. 
+                Hello! My name is <b style="color: aquamarine;">Adam Weber</b>. I am a passionate Game Programmer and Game Designer who has been making and developing games ever since the year 2018! 
+                
+                I am a graduate from <a href="https://www.uww.edu/" target="_blank" style="color: aquamarine;">University of Wisconsin - Whitewater</a> who obtained a Bachelor of Science in Computer Science and Media Arts and Game Development - Communication/Gaming. 
+                I have made the deans list in each semester that I attended there and graduated <i style="color: aquamarine;">magna cum laude </i>.<br><br>
+
+                Before I went to college, I was a part of a <b><a href="https://www.firstinspires.org/robotics/frc" target="_blank" style="color: aquamarine;">F.I.R.S.T.</a></b> FRC team, <b style="color: aquamarine;">CORE 2062</b>. 
                 In my time there, I was the lead designer of its website and worked closely with sponsors. Many of my changes and designs are still
                 on the website today, and I am proud to be an alumni for such an amazing organization. You can see the website <a href="http://core2062.com/" target="_blank" style="color: aquamarine;"> here</a>! <br><br>
 
-                Ever since I went to college, I have worked hard to learn and gain as much experience as possible in the gaming field. I have been a part of a study abroad project (became remote due to Covid 19), personal and team based projects, and 
-                numerous game jams during the school years and summers. <br><br>
+                Throughout my time in college, I participated in as many opportunities as I could to better my skills and gain more connections. I worked in research projects alongside several professors, a study abroad project (became remote due to 
+                Covid 19), a few independent study courses, personal and team-oriented projects, and dozens and dozens of game jams! It goes without saying that I love game jams. Many of these projects are found here on 
+                my portfolio below or on my itch page!<br><br>
 
-                I push myself to become better everyday. Making games is my passion, and I hope one day that I can be a part of a great team working for the same goal: to create amazing games that will be cherished by many. <br><br>
-
-                <i style="color: rgb(255, 243, 131);">I am currently a Game Engineer for <a href="https://www.filamentgames.com/" target="_blank" style="color: rgb(255, 243, 131);">Filament Games!</a></i><br><br>
+                Today, I am proud to say that I now have roughly 1.7 years of work experience under my belt through <a href="https://www.filamentgames.com/" target="_blank" style="color: aquamarine">Filament Games</a> as a Game Engineer where I worked in an agile environment with UX/UI designers, game designers, producers, web developers, QA, and of course other
+                game engineers. To see some of my work, visit my <a href="ProfWork/professionalWork.html" target="_blank" style="color: aquamarine;">Professional Work</a> page here on my portfolio!
+                <br><br>
+                Outside of my work experience, I co-own a small game studio with a couple friends from college that is currently developing board games! Independently from that, I also am working on a deck-building tower defense that I plan
+                to publish on Steam this year. Feel free to ask me anything about these projects!
             </p>
         </div>
         
     </section>
-    <div id="skills" style="overflow: auto; position: absolute; margin-top: -81px;" class="sectionDivider"></div>
+    <div id="skills" style="overflow: auto; " class="sectionDivider"></div>
     <section class="section" > <!--My Skills-->
         <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText">
@@ -142,44 +126,96 @@
             </p>
             <img src = "Images/separater.png" alt="sep" class = "sep">
         </div>
-        <div class="container2">
-            <div style="margin-right: 1in;">
-                <p class="skills_topic">Languages</p>
-                <p class="skills_great"><b >C#</b></p>
-                <p class="skills_great"><b>C++</b></p>
-                <p class="skills_good">Java</p>
-                <p class="skills_good">HTML/CSS</p>
-                <p class="skills_good">JavaScript</p>
-                <p class="skills_good">PHP</p>
+        <div id="talents_image">
+            <div style="background-color: hsla(0, 0%, 15%, 0.473);">
+                <div class="talents_container_primary">
+                    <table style="width: 100%;">
+                        <tbody>
+                            <tr  class="talents_container ">
+                                <td class="talents_column_head left">
+                                    <p class="talents_topic">
+                                        Skills
+                                    </p>
+                                </td>
+                                <td class="talents_column_head right">
+                                    <p class="talents_topic">
+                                        Software and Tools
+                                    </p>
+                                </td>
+                            </tr>
+                            <tr  class="talents_container"> 
+                                <td class="talents_column_content left">
+                                    <div>
+                                        <p class="talent start"><b>Scripting</b></p>
+                                        <p class="talent"><b>C#</b></p>
+                                        <p class="talent"><b>Typescript/JS</b></p>
+                                        <p class="talent">C++</p>
+                                        <p class="talent">HTML/CSS</p> 
+                                    </div>
+                                    <div>
+                                        <p class="talent start"><b>Work Environment</b></p>
+                                        <p class="talent"><b>Scrum Development</b></p>
+                                    </div>
+                                    <div>
+                                        <p class="talent start"><b>Devops</b></p>
+                                        <p class="talent"><b>Gitlab</b></p>
+                                        <p class="talent"><b>Github</b></p>
+                                    </div>
+                                    <div>
+                                        <p class="talent start"><b>Production Tools</b></p>
+                                        <p class="talent"><b>Jira</b></p>
+                                        <p class="talent"><b>Trello</b></p>
+                                    </div>
+                                    
+                                </td>
+                                <td class="talents_column_content right">
+                                    <div>
+                                        <p class="talent start"><b>Game Engines</b></p>
+                                        <p class="talent"><b>Unity</b></p>
+                                    </div>
+                                    
+                                    <div>
+                                        <p class="talent start"><b>Source Control</b></p>
+                                        <p class="talent"><b>Source Tree</b></p>
+                                        <p class="talent"><b>Github Desktop</b></p>
+                                    </div>
+                                    <div>
+                                        <p class="talent start"><b>Productivity</b></p>
+                                        <p class="talent"><b>Photoshop / Illustrator / Audition</b></p>
+                                        <p class="talent"><b>Affinity Designer</b></p>
+                                        <p class="talent"><b>Microsoft Office</b></p>
+                                    </div>
+                                    <div>
+                                        <p class="talent start"><b>Other</b></p>
+                                        <p class="talent"><b>Postman</b></p>
+                                        <p class="talent"><b>Docker</b></p>
+                                    </div>
+                                    
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table> 
+                    <div id="featured_projects" style="overflow: auto; background-color: rgba(0, 0, 0, 0); " class="sectionDivider"></div>
+                </div>
             </div>
-            <div style="margin-right: 0.4in;">
-                <p class="skills_topic">Tools</p>
-                <p class="skills_great"><b>Visual Studio</b></p>
-                <p class="skills_good">Adobe Suite</p>
-                <p class="skills_good">Microsoft Office</p>
-                <p class="skills_good">Github</p>
-                <p class="skills_good">Jera</p>
-                <p class="skills_good">Trello</p>
-            </div>
-            <div style="margin-left: 1in;">
-                <p class="skills_topic">Engines</p>
-                <p class="skills_great"><b>Unity</b></p>
-                <p class="skills_good">Unreal</p>
-            </div>
+            
+           
         </div>
     </section>
-    <div id="projects" style="overflow: auto; " class="sectionDivider"></div>
+
+    
     <section class="section"> <!--My Work-->
         <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText">
-                Game Projects
+                Featured Game Projects
             </p>
             
             <img src = "Images/separater.png" alt="sep" class = "sep">
         </div>
         <div class="workMainContainer">
             <div class="row">
-                <div class="workContainer">
+                <div class="work_Featured_Container">
                     <div class="project">
                         <a class="workLink" href="Pages/anima.html" target="_blank">
                             <div class="workItem">
@@ -203,9 +239,217 @@
                                 <span>Team Project</span>
                             </div>
                         </div>
+                        <!--Description-->
+                        <div><p>Study abroad with Han University - NL</p></div>
+                        <!--Contents-->
+                        <div class="work_Item_Contents_Container">
+                            <table class="work_Item_Contents">
+                                <tbody>
+                                    <tr> 
+                                        <td class="work_Item_Contents_Cell" >
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Various player obstacles
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Puzzle & Level Design
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Worked with numerous project departments.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Collaborated during Covid Pandemic
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
-                <div class="workContainer">
+                <div class="work_Featured_Container">
+                    <div class="project">
+                        <a class="workLink" href="Pages/mythos.html" target="_blank">
+                            <div class="workItem">
+                                <div class="workItemImage" style="background-image: url('Images/mythos_2.PNG');"></div>
+                                <div class="workTitle">
+                                    <span><b>Mythos</b></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="tagContainer">
+                            <div class="tag" style="background-color: rgb(22, 129, 0);">
+                                <span>Unity</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(99, 0, 129);">
+                                <span>C#</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 124, 13);">
+                                <span>Team Project</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(0, 82, 129);">
+                                <span>Capstone</span>
+                            </div>
+                        </div>
+                        <!--Description-->
+                        <div><p>Competitive deck building card game / CCG</p></div>
+                        <!--Contents-->
+                        <div class="work_Item_Contents_Container">
+                            <table class="work_Item_Contents">
+                                <tbody>
+                                    <tr> 
+                                        <td class="work_Item_Contents_Cell" >
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Interactive in game board
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Deck building with several filters for a card database
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Multiplayer capibility with game queue and direct battle. Including MR system
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Individual card mechanics, VO, SFX
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="work_Item_Contents_Cell">
+                                            <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                keyboard_double_arrow_right
+                                                </span>
+                                            Showcased at the Milwaukee Gaming Conference and UWW's MAGD Expo
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="work_Featured_Container">
+                    <div class="project">
+                        <a class="workLink" href="Pages/lyra.html" target="_blank">
+                            <div class="workItem">
+                                <div class="workItemImage" style="background-image: url('Images/lyra_5.PNG');"></div>
+                                <div class="workTitle">
+                                    <span><b>Lyra's Tale</b></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="tagContainer">
+                            <div class="tag" style="background-color: rgb(22, 129, 0);">
+                                <span>Unity</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(99, 0, 129);">
+                                <span>C#</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 13, 114);">
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(14, 121, 124);">
+                                <span>My Assets</span>
+                            </div>
+                        </div>
+                         <!--Description-->
+                         <div><p>2D top-down RPG inspired by Zelda</p></div>
+                         <!--Contents-->
+                         <div class="work_Item_Contents_Container">
+                             <table class="work_Item_Contents">
+                                 <tbody>
+                                     <tr> 
+                                         <td class="work_Item_Contents_Cell" >
+                                             <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                 keyboard_double_arrow_right
+                                                 </span>
+                                             Combat System
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="work_Item_Contents_Cell">
+                                             <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                 keyboard_double_arrow_right
+                                                 </span>
+                                             Different types of Crafting - Cooking, Alchemy
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="work_Item_Contents_Cell">
+                                             <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                 keyboard_double_arrow_right
+                                                 </span>
+                                             Inventory and Gear Systems
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="work_Item_Contents_Cell">
+                                             <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                 keyboard_double_arrow_right
+                                                 </span>
+                                             Saving / Loading
+                                         </td>
+                                     </tr>
+                                     <tr>
+                                         <td class="work_Item_Contents_Cell">
+                                             <span class="material-symbols-outlined work_Item_Contents_Cell_Arrow" style="vertical-align: sub;">
+                                                 keyboard_double_arrow_right
+                                                 </span>
+                                             Dialog and Quest system that saves/loads
+                                         </td>
+                                     </tr>
+                                 </tbody>
+                             </table>
+                         </div>
+                    </div>
+                    
+                </div> 
+            </div>
+        </div>
+    </section>
+
+
+    <div id="projects" style="overflow: auto; " class="sectionDivider"></div>
+    <section class="section"> <!--GAME PROJECTS-->
+        <div style="background-color: rgb(26, 26, 26);">
+            <p class="sepText">
+                Game Projects
+            </p>
+            
+            <img src = "Images/separater.png" alt="sep" class = "sep">
+        </div>
+        <div class="workMainContainer">
+            <div class="row">
+                <div class="workContainer"><!--WATCHER-->
                     <div class="project">
                         <a class="workLink" href="Pages/watcher.html" target="_blank">
                             <div class="workItem">
@@ -231,61 +475,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="workContainer">
-                    <div class="project">
-                        <a class="workLink" href="Pages/lyra.html" target="_blank">
-                            <div class="workItem">
-                                <div class="workItemImage" style="background-image: url('Images/lyra_5.PNG');"></div>
-                                <div class="workTitle">
-                                    <span><b>Lyra's Tale</b></span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="tagContainer">
-                            <div class="tag" style="background-color: rgb(22, 129, 0);">
-                                <span>Unity</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(99, 0, 129);">
-                                <span>C#</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(165, 13, 114);">
-                                <span>Solo Project</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(14, 121, 124);">
-                                <span>My Assets</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div> <!-- MYTHOS RIGHT HERE!!!-->
-                <div class="workContainer">
-                    <div class="project">
-                        <a class="workLink" href="Pages/mythos.html" target="_blank">
-                            <div class="workItem">
-                                <div class="workItemImage" style="background-image: url('Images/mythos_2.PNG');"></div>
-                                <div class="workTitle">
-                                    <span><b>Mythos</b></span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="tagContainer">
-                            <div class="tag" style="background-color: rgb(22, 129, 0);">
-                                <span>Unity</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(99, 0, 129);">
-                                <span>C#</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(165, 124, 13);">
-                                <span>Team Project</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(0, 82, 129);">
-                                <span>Capstone</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
                 <div class="workContainer">
                     <div class="project">
                         <a class="workLink" href="Pages/split.html" target="_blank">
@@ -340,6 +529,34 @@
                 </div>
                 <div class="workContainer">
                     <div class="project">
+                        <a class="workLink" href="Pages/yahtzee.html" target="_blank">
+                            <div class="workItem">
+                                <div class="workItemImage" style="background-image: url('Images/yahtzee_1.PNG');"></div>
+                                <div class="workTitle">
+                                    <span><b>Yahtzee</b></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="tagContainer">
+                            <div class="tag" style="background-color: rgb(22, 129, 0);">
+                                <span>Unity</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(99, 0, 129);">
+                                <span>C#</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 13, 114);">
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(156, 91, 17);">
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="workContainer">
+                    <div class="project">
                         <a class="workLink" href="Pages/faldihr.html" target="_blank">
                             <div class="workItem">
                                 <div class="workItemImage" style="background-image: url('Images/faldihr_2.PNG');"></div>
@@ -367,36 +584,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="workContainer">
-                    <div class="project">
-                        <a class="workLink" href="Pages/yahtzee.html" target="_blank">
-                            <div class="workItem">
-                                <div class="workItemImage" style="background-image: url('Images/yahtzee_1.PNG');"></div>
-                                <div class="workTitle">
-                                    <span><b>Yahtzee</b></span>
-                                </div>
-                            </div>
-                        </a>
-                        <div class="tagContainer">
-                            <div class="tag" style="background-color: rgb(22, 129, 0);">
-                                <span>Unity</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(99, 0, 129);">
-                                <span>C#</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(165, 13, 114);">
-                                <span>Solo Project</span>
-                            </div>
-                            <div class="tag" style="background-color: rgb(156, 91, 17);">
-                                <span>JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="workContainer"><!-- AROA-->
-                    
+                <div class="workContainer"><!-- AROA--> 
                     <div class="project">
                         <a class="workLink" href="Pages/aroa.html" target="_blank">
                             <div class="workItem">
@@ -449,10 +637,65 @@
                         </div>
                     </div>
                 </div>
+                <div class="workContainer"><!--DOUGHNUTS-->
+                    <div class="project">
+                        <a class="workLink" href="Pages/blazin_doughnuts.html" target="_blank">
+                            <div class="workItem">
+                                <div class="workItemImage" style="background-image: url('Images/doughnuts_6.PNG');"></div>
+                                <div class="workTitle">
+                                    <span><b>Blazin' Doughnuts</b></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="tagContainer">
+                            <div class="tag" style="background-color: rgb(22, 129, 0);">
+                                <span>Unity</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(99, 0, 129);">
+                                <span>C#</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 13, 114);">
+                                <span>Solo Project</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 13, 13);">
+                                <span>Game Jam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="workContainer"><!--DOUGHNUTS-->
+                    <div class="project">
+                        <a class="workLink" href="Pages/chimera.html" target="_blank">
+                            <div class="workItem">
+                                <div class="workItemImage" style="background-image: url('Images/chimera_6.PNG');"></div>
+                                <div class="workTitle">
+                                    <span><b>Crafted Chimera</b></span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="tagContainer">
+                            <div class="tag" style="background-color: rgb(22, 129, 0);">
+                                <span>Unity</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(99, 0, 129);">
+                                <span>C#</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 124, 13);">
+                                <span>Team Project</span>
+                            </div>
+                            <div class="tag" style="background-color: rgb(165, 13, 13);">
+                                <span>Game Jam</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <section class="section"> <!--My Work-->
+
+    <section class="section"> <!--Other projects-->
         <div style="background-color: rgb(26, 26, 26);">
             <p class="sepText">
                 Other Projects
@@ -514,6 +757,7 @@
             </div>
         </div>
     </section>
+
     <div id="contact" style="overflow: auto;" class="sectionDivider"></div>
     <section class="section" style="background-color: rgb(99, 31, 163);"> <!--Contact Me Section-->
         <div>
