@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../styles.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism.min.css" rel="stylesheet" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    </head>
+    <style>
+        body {
+                margin-right: 0%;
+                margin-left: 0%;
+                margin-top: 3%;
+                font-size: 0.7rem;
+        }
+        section{
+                margin-top: 1%;
+        }
+        video {
+                width: 85%;
+                margin: auto;
+                padding: 1%;
+                
+            }
+        span {
+            color: aquamarine;
+        }
+        @media (min-width: 900px){
+                body{
+                    margin-right: 25%;
+                    margin-left: 25%;
+                    margin-top: 3%;
+                }
+        }
+    </style>
+    <body>
+        <section>
+            <!--<img src="../Images/watcher.PNG" class="headerImage">-->
+            <div class="gameTitle">
+                Project: TOWERDECK
+            </div>
+            <div class="gameDescription">
+                <div>
+                    <table style=" margin: auto;">
+                        <tbody>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Timeframe</strong>
+                                </td>
+                                <td class="prof_td">January 2024 - Present Day</td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Languages Used</strong>
+                                </td>
+                                <td class="prof_td">
+                                    <div class="tagContainer" style="line-height: 100%; font-size: 75%; padding-top: 0;">
+                                        <div class="tag" style="background-color: rgb(99, 0, 129); ">
+                                            <span style="color: white;">C#</span>
+                                        </div> 
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Softwares Used</strong>
+                                </td>
+                                <td class="prof_td">Unity, Blender, Studio One</td>
+                            </tr>  
+                            <tr>
+                                <td class="prof_td">
+                                    <strong>Project Role</strong>
+                                </td>
+                                <td class="prof_td">Solo Project (everything)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                Project: TOWERDECK is a deck-builder, tower defense, rogue-like game where the player utilizes a growing deck of cards
+                to defend their castle from an endless onslaught of horrifying monsters in a procedurally generated dark cave! Choose between
+                four unique classes or multiclass! Specialize more into placing towers or more into casting spells! Battle against terrifying
+                bosses and push your way to the dungeon! <br><br>
+
+                As a fan of both tower defense games and strategy card games, I decided to take it upon myself to combine the two massive genres.
+                The idea was to make a game in a fantasy RPG setting where it felt like you were playing a card game such as Slay the Spire, but the 
+                avenue of which you play on was on a procedurally generated map and you are playing against the AI enemies. 
+                
+                The game is not yet finished, however I made this section to explain the game thoroughly through a few massive systems. 
+
+                <br><br>
+               
+
+                
+            </div>
+            <div class="gameTitle">
+                My Contributions
+            </div>
+            <div class="gameDescription">
+                <div class="contribution">
+                    Map Generation
+                </div>
+                <img src = "../Images/separater.png" alt="sep" class = "sep">
+                <br>Project: TOWERDECK has a procedurally generated map that is created before the game begins. Each chunk of the map is called a "Map Block," 
+                and with these map blocks I am able to build a map that enemies can walk across and move toward the player's castle. <br><br>
+                
+                There is a map block for every combination of directions within a square. That includes north, south, east, and west. As an example, there is a map block
+                for just north, and there is one for the combination of north, south, and east. An example below: <br><br>
+
+                There are several steps to ensure the game will run smoothly. 
+                <img src = "../Images/towerdeck/1.PNG" alt="sep" class = " headerImage"><br><br>
+                <span>Step 1: Initial generation of the map. </span><br><br>
+
+                A castle mapblock is placed. When any mapblock is placed, all open directions that it provides is placed in a list. It is this list that I 
+                pull a new location from to place a new mapblock. A loop runs through this a number of times equal to the amount that I set (lets say 100 mapblocks
+                for example). <br><br>
+
+                This step is crucial as it places the foundation of the map. When placing any block, I must check to ensure that the direction it came from is connected
+                to the new block. If I place a block at (0, 1) and it came from (0, 0), then the new block must connect with its southern neighbour. <br><br>
+
+                <span>Step 2: Smoothing the edges. </span><br><br>
+
+                After the initial generation, I go through every block to make sure that it doesn't have open directions. We don't want to have a mapblock open
+                to the endless void where nothing is, it should be closed off. Should I find something that is "broken," I simply replace a block with a suitable
+                block. If I replace a block that has an open path going east, I just replace it with a block that cannot go east. <br><br>
+
+                <span>Step 3: Waypoint Generation/Connecting </span><br><br>
+
+                Waypoints are my term for transform locations that enemies (or projectiles) use to walk toward. Part of placing a block is to connect all neighbours
+                via their Waypoints. I do this in a separate step to ensure a smooth transition from generating the map and replacing any blocks that I come across.<br><br>
+                
+                Enemy AI should have its own section but I figured I would put this here as it is part of my overall map generation. In the picture above, the Waypoints
+                are the pink dots. <br><br>
+                <i>Video shows a visual of the generation. Notice how some blocks become replaced after the initial generation</i>
+                <video loop autoplay muted><source src="../Images/towerdeck/vid_1.mp4" type="video/mp4"></video>
+                <aside class="accordion" > 
+                    <h1>
+                        MapGenerator.cs
+                        <strong class="accordion_icon icon_idle">
+                            +
+                        </strong>
+                    </h1>
+                    <div class="initialTab">
+                        <pre>
+                            <iframe src="../test.txt" style="border: none; color: white;"></iframe>
+                        </pre>
+                    </div>      
+                </aside>
+                <div class="contribution">
+                    Card Mechanics
+                </div>
+                <img src = "../Images/separater.png" alt="sep" class = "sep"><br>
+
+                Project: TOWERDECK utilizes cards as its main way of involving strategic gameplay for the players. Cards are what places new towers, 
+                casts spells onto the map that could damage enemies or upgrade towers, or cast spells that could give you more opportunities of finding 
+                new cards by drawing more, finding a specific one, etc. <br><br>
+
+                As someone who has played many card games, I knew that there was a certain feel that I wanted for my card game. The best part of any major 
+                card game is the amount of ways you can play it. No two games are the same. The way I accomplish this is by having the player choose a class!<br><br>
+
+                Players may choose to be a wizard, bard, cleric, or ranger (for now). Each class comes with their own unique cards and card mechanics that players 
+                may choose from over the course of their time playing. They are even allowed, after a certain amount of waves, to multiclass and mix the 
+                type of cards they have to choose from! So, if you wanted to be a ranger-wizard, you could. <br><br>
+
+                <i>The green card below is a Ranger card. Only rangers can place a Sniper Tower!</i>
+                <img src = "../Images/towerdeck/2.PNG" alt="sep" class = " headerImage"><br><br>
+
+
+            </div>
+            
+            
+
+            <div class="gameTitle">
+                Various Pictures
+            </div>
+            <img src = "../Images/towerdeck/3.PNG" alt="sep" class = " headerImage">
+        </section>
+        <script type="text/javascript" src="../script.js"></script>
+    </body>
+</html>
