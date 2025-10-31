@@ -14,7 +14,9 @@ $(window).on("scroll", function(){
 });
 
 
-
+document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
 
 //#region ACCORDION
   var accordion_headers = ["H1","H2","H3","H4","H5","H6"];

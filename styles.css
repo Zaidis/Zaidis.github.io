@@ -438,6 +438,8 @@ table {
     padding: 1%;
     line-height: 150%;
     text-align: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
 }
 .contribution {
     font-size: 200%;
